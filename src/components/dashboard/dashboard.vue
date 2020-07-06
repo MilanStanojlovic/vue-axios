@@ -16,7 +16,7 @@ export default {
   },
   created() {
     axios
-      .get("https://vue-axios-fd06d.firebaseio.com/users.json")
+      .get("/users.json")
       .then(response => {
         console.log(response);
         const data = response.data;

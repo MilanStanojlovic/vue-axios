@@ -51,7 +51,8 @@
 </template>
 
 <script>
-import axios from "axios";
+// import axios from "axios";
+import axios from "../../axios-auth";
 
 export default {
   data() {
@@ -89,7 +90,7 @@ export default {
       console.log(formData);
 
       axios
-        .post("https://vue-axios-fd06d.firebaseio.com/users.json", formData)
+        .post("/users.json", formData)
         .then(response => {
           console.log(response);
         })
